@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.intro{
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    
+}
+
+
+.clock-image{
+    width: 35vw;    
+}
+@media screen and (max-width: 600px) { 
+
+    .clock-image { display: none; }  
+    
+}
