@@ -9,30 +9,6 @@ labels.forEach((label) => {
 });
 
 let tasksArr = [
-  {
-    title: "Task 1",
-    description: "Task 1 description",
-    date: "23 Dec 2022",
-    time: "10:10",
-  },
-  {
-    title: "Task 2",
-    description: "Task 2 description",
-    date: "23 Dec 2022",
-    time: "10:10",
-  },
-  {
-    title: "Task 3",
-    description: "Task 3 description",
-    date: "23 Dec 2022",
-    time: "10:10",
-  },
-  {
-    title: "Task 4",
-    description: "Task 4 description",
-    date: "23 Dec 2021",
-    time: "10:10",
-  },
 ];
 const tasksWrapper = document.querySelector(".tasks-wrapper");
 

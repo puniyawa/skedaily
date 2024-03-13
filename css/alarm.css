@@ -8,23 +8,30 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 body {
   min-height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #764469;
 }
 .container {
+  margin-top: 50px;
   width: 400px;
   height: 800px;
   border-radius: 10px;
   padding: 20px;
   background-color: var(--bg-color);
 }
+
+@media screen and (max-width: 400px) { 
+  .container{
+    width: 95vw;
+  }
+}
+
+
 .clock-wrapper {
   position: relative;
   width: 100%;
