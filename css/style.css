@@ -7,19 +7,64 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* body{
+    overflow: hidden;
+} */
 .intro{
-    background-color: rgba(255, 255, 255, 0.5); 
-    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255); 
+
     padding: 25px;
     
 }
-
-
+.intro-all{
+    background-color: rgba(252, 249, 251, 0.651); 
+    backdrop-filter: blur(8px);
+    padding: 25px;
+ 
+}
 .clock-image{
     width: 35vw;    
 }
-@media screen and (max-width: 600px) { 
+.greetings-text{
+  font-size: 5rem;
+  color: #77466a; 
+  text-shadow: 0 1px 20px #e6cade;
+}
+@media screen and (max-width: 1000px) { 
 
     .clock-image { display: none; }  
-    
+    .greetings-text{
+      font-size: 3rem;
+    }
 }
+
+.loginBtn {
+    padding: 0.75em 2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: 15px;
+    border-color: #000;
+    border-radius: 45px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+    
+  .loginBtn:hover {
+    background-color: #764469;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .loginBtn:active {
+    transform: translateY(-1px);
+  }
+
+  .nav-link:hover{
+    color:#764469;
+  }

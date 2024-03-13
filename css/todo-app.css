@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 :root {
-  --primary-color: #672ee3;
+  --primary-color: #764469;
 }
 * {
   margin: 0;
@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #efeef5;
+  background-color: #764469;
 }
 .container {
   position: relative;

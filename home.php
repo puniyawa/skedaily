@@ -14,7 +14,7 @@
 <body style="background-image: url(images/bg-index.png); background-size: 1240px, auto; background-repeat: no-repeat;  background-position: center; ">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><b>SkeDaily</b> </a>
+      <a class="navbar-brand" href="#" style="color:#764469;"><i class="fa-solid fa-clock me-2"></i><b>SkeDaily</b> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,13 +25,13 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="html/alarm.php?uid=<?php echo $_GET['uid']?>">Alarm</a>
+          <a class="nav-link hover-link" href="html/alarm.php?uid=<?php echo $_GET['uid']?>">Alarm</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="html/calendar.php?uid=<?php echo $_GET['uid']?>">Calendar</a>
+          <a class="nav-link hover-link" href="html/calendar.php?uid=<?php echo $_GET['uid']?>">Calendar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="html/todo-app.php?uid=<?php echo $_GET['uid']?>">To-do</a>
+          <a class="nav-link hover-link" href="html/todo-app.php?uid=<?php echo $_GET['uid']?>">To-do</a>
         </li>
         <li class="nav-item">
           
@@ -43,15 +43,27 @@
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-11 col-md-5 mt-5 m-3">
-        <h1 style="font-size: 5rem;">
-          <b>Welcome</b><br>
-          <?php echo $_GET['uid']?>
-        </h1>
-        <br>
-        <p class="rounded shadow p-3 intro">SkeDaily aims to help students manage their time, schedule, and workload. One of its features is that it allows user to input their academic tasks and the deadline. When the task's deadline is near, the web application will notify the user of the task two days prior to the deadline. Its other feature lets the user input their schedule in the app's calendar, allowing the students to see their tasks efficiently and their free time quickly. It also has a part where students can create a list of to-do things for their tasks.</p>
+      <div class="col-11 col-md-5 mt-5 m-3 shadow intro-all rounded">
+          <h1 class="text-truncate greetings-text">
+            <b>Welcome</b><br>
+            <?php echo $_GET['uid']?>
+          </h1>
+          <br>
+         <p class="rounded shadow p-3 intro">SkeDaily aims to help students manage their time, schedule, and workload. One of its features is that it allows user to input their academic tasks and the deadline. When the task's deadline is near, the web application will notify the user of the task two days prior to the deadline. Its other feature lets the user input their schedule in the app's calendar, allowing the students to see their tasks efficiently and their free time quickly. It also has a part where students can create a list of to-do things for their tasks.</p>
+      <div class="d-flex justify-content-center" style="flex-wrap: wrap;">
+        <a class="nav-link mb-sm-0 mb-3" href="html/alarm.php?uid=<?php echo $_GET['uid']?>"> 
+          <button class="shadow loginBtn" style="border-radius: 45px;"> Alarm</button>
+        </a>
+        <a class="nav-link mb-sm-0 mb-3" href="html/calendar.php?uid=<?php echo $_GET['uid']?>"> 
+          <button class="shadow loginBtn ms-3" style="border-radius: 45px;">Calendar</button>
+        </a>
+        <a class="nav-link" href="html/todo-app.php?uid=<?php echo $_GET['uid']?>"> 
+          <button class="shadow loginBtn ms-3" style="border-radius: 45px;">To-do</button>
+        </a>
       </div>
-      <div class="col-11 col-md mt-5 m-3 ">
+       
+      </div>
+      <div class="col-11 col-md mt-5 m-3">
         <div class="row justify-content-center">
             <img class="p-2 clock-image" src="images/clock.png" alt="">   
         </div>  
